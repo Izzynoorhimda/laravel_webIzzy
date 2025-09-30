@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ekstrakulikulers', function (Blueprint $table) {
+        Schema::create('beritas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->string('judul');
-            $table->text('isi');
-            $table->string('gambar');
+            $table->text('link');
+            $table->string('gambar')->nullable();
         });
     }
 
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ekstrakulikulers');
+        Schema::dropIfExists('beritas');
     }
 };

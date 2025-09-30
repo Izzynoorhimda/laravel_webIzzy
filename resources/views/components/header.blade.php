@@ -39,6 +39,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="/galeri">Galeri</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/berita">Berita</a>
+                    </li>
                     </form>
             </div>
         </div>

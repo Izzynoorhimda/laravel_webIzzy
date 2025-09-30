@@ -86,6 +86,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="text-center my-4">
+                    <a class="btn btn-outline-success" href="/berita">Lihat Lainnya</a>
+                    </div>
                 </div>
             </div>
             <!-- TUTUP SECTION BERITA -->

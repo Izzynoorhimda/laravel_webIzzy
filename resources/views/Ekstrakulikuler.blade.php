@@ -13,24 +13,30 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card mb-3" style="max-width: 540px;">
-
+                        {{-- english club --}}
                     <div class="row g-0">
+                        @foreach ($ekstrakulikuler as $item )
+                            
                         <div class="col-md-4">
-                            <img src="https://web-sekolah-tawny.vercel.app/_nuxt/ec.BQTqDsuh.jpg"
-                                class="img-fluid rounded-start" alt="...">
+                            {{-- gambar eskul --}}
+                            <img src="{{ $item->gambar }}"
+                            class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">English Club</h5>
-                                <p class="card-text">Melatih kemampuan berbahasa Inggris melalui diskusi, debat, dan
-                                    kegiatan interaktif lainnya.</p>
-                                <a href="https://www.instagram.com/ecv4tas?igsh=MXV6c3Zhem5ieTRodQ==">ecv4tas</a>
+                                {{-- judul --}}
+                                <h5 class="card-title">{{ $item->judul }}</h5>
+                                {{-- isi --}}
+                                <p class="card-text">{{ $item->isi }}</p>
+                                    <a href="https://www.instagram.com/ecv4tas?igsh=MXV6c3Zhem5ieTRodQ==">ecv4tas</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-
-            </div>
+                    @endforeach
+                    {{-- perisai diri --}}
             <div class="col-md-6">
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
@@ -50,6 +56,7 @@
                     </div>
                 </div>
             </div>
+            {{-- pks --}}
             <div class="col-md-6">
                 <div class="card mb-3" style="max-width: 540px;">
 
@@ -71,6 +78,7 @@
                 </div>
 
             </div>
+            {{-- paskibra --}}
             <div class="col-md-6">
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
@@ -90,6 +98,7 @@
                     </div>
                 </div>
             </div>
+            {{-- pramuka --}}
             <div class="col-md-6">
                 <div class="card mb-3" style="max-width: 540px;">
 
@@ -110,6 +119,7 @@
                 </div>
 
             </div>
+            {{-- pmr --}}
             <div class="col-md-6">
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
